@@ -1,0 +1,124 @@
+body {
+  /* general font settings */
+  font-family: 'Source Code Pro', monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  margin: 0;
+  color: #0080ff;
+  background-color: #ecebe4;
+}
+
+.btn {
+  font: inherit;
+  color: #ecebe4;
+  background-color: #07004d;
+  padding: 0.5rem 1.5rem; /* top-bottom   left-right*/
+  border: 1px solid #07004d;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0080ff;
+  border-color: #0080ff;
+}
+
+.active-game {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 2rem auto 5rem auto;  /* top right bottom left*/
+}
+
+.game-info li{
+    padding: 0.5rem;
+}
+
+#game-over {
+    width: 90%;
+    max-width: 40rem;
+    margin: auto;
+    padding: 1rem 2rem; /* top & bottom     left & right*/
+    color: #ecebe4;
+    background-color: #07004d;
+    text-align: center;
+    display: none;
+}
+
+#game-over span {
+    color: #FF479D;
+}
+
+#start-new-game-error{
+    width: 90%;
+    max-width: 40rem;
+    margin: auto;
+    padding: 1rem 2rem; /* top & bottom     left & right*/
+    color: rgb(178, 29, 29);
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+#choose-starting-player{
+    width: 90%;
+    max-width: 40rem;
+    margin: auto;
+    padding: 2rem 2rem; /* top & bottom     left & right*/
+    color: #07004d;
+    text-align: center;
+    display: none;
+}
+
+#choose-starting-player span{
+    color: #0080ff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+#choose-starting-player span:hover{
+    color: #ecebe4;
+    background-color: #0080ff;
+}
+
+
+#active-player-name {
+    font-weight: bold;
+    color: #07004d;
+}
+
+.game-board {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.square {
+    background-color: #07004d;
+    border: 1px solid #07004d;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.square:hover {
+    background-color: #0080ff;
+}
+
+.square.disabled {
+    cursor: default;
+    color: #FF479D;
+}
+
+.square.disabled:hover {
+    background-color: #07004d;
+}
